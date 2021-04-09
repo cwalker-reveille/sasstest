@@ -1,0 +1,11 @@
+﻿@use "sass:map";
+@use "sass:color";
+@use "variables" as v;
+
+
+
+.admin_collectors {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

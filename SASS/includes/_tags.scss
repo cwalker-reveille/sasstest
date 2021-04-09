@@ -1,0 +1,84 @@
+.tag {
+    //padding: 0.2em 0.4em 0.3em;
+    font-size: 80%;
+    min-width: 20px;
+    border-radius: 0;
+}
+
+.tag-pill {
+    padding-right: .7em;
+    padding-left: .7em;
+    border-radius: 10rem;
+}
+
+.tag-default {
+    background-color: #adb7be;
+}
+
+.tag-default[href]:focus,
+.tag-default[href]:hover {
+    background-color: #c6d1d8;
+}
+
+.tag-primary {
+    background-color: #3e70c9;
+}
+
+.tag-primary[href]:focus,
+.tag-primary[href]:hover {
+    background-color: #467ee1;
+}
+
+.tag-success {
+    background-color: #43b968;
+}
+
+.tag-success[href]:focus,
+.tag-success[href]:hover {
+    background-color: #4bcb73;
+}
+
+.tag-info {
+    background-color: #20b9ae;
+}
+
+.tag-info[href]:focus,
+.tag-info[href]:hover {
+    background-color: #33cbc0;
+}
+
+.tag-warning {
+    background-color: #f59345;
+}
+
+.tag-warning[href]:focus,
+.tag-warning[href]:hover {
+    background-color: #fea45c;
+}
+
+.tag-danger {
+    background-color: #f44236;
+}
+
+.tag-danger[href]:focus,
+.tag-danger[href]:hover {
+    background-color: #ff574c;
+}
+
+.tag-purple {
+    background-color: #a567e2;
+}
+
+.tag-purple[href]:focus,
+.tag-purple[href]:hover {
+    background-color: #a567e2;
+}
+
+.tag-black {
+    background-color: #333;
+}
+
+.tag-black[href]:focus,
+.tag-black[href]:hover {
+    background-color: #333;
+}

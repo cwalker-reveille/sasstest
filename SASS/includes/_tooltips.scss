@@ -1,0 +1,32 @@
+.myColor{
+ color:$dark-text;   
+}  
+
+/*customizing tooltip color*/
+/*right tooltip*/
+.tooltip.right > .tooltip-arrow {
+  border-right-color: $dark-text;
+}
+
+/*bottom tooltip*/
+.tooltip.bottom > .tooltip-arrow {
+  border-bottom-color: $dark-text;
+}
+
+/*top tooltip*/
+.tooltip.top > .tooltip-arrow {
+  border-top-color: $dark-text;
+}
+
+/*left tooltip*/
+.tooltip.left > .tooltip-arrow {
+  border-left-color: $dark-text;
+}
+
+/*tooltip inner*/
+.tooltip > .tooltip-inner {
+  background-color: $dark-text;
+  //text-shadow: 0 1px 1px #000;
+  font-weight: 400;
+
+}

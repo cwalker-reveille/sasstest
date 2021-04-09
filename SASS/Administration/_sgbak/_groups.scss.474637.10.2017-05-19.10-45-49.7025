@@ -1,0 +1,23 @@
+$section-accent: $admin;
+.admingroups_buttoncontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .addbutton {
+        width: 10em;
+    }
+    .assignbutton {
+        width: 13em;
+    }
+    .refreshbutton {
+        width: 1.5em;
+        >a {
+            color: #000000;
+        }
+    }
+}
+
+.admin_groups {
+    @import "_shared.scss";
+    @import "_table_overwrites.scss";
+}

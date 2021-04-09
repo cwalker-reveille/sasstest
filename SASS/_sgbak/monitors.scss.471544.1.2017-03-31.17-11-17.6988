@@ -1,0 +1,13 @@
+/* Let the Variables Begin */
+
+@import "_variables.scss";
+
+/* Let the Variables END */
+
+@import "dashboard_support/_monitors.scss";
+@import "dashboard_support/monitors/_status.scss";
+@import "dashboard_support/monitors/_logs.scss";
+@import "dashboard_support/monitors/_response.scss";
+@import "dashboard_support/monitors/_availability.scss";
+@import "dashboard_support/monitors/_metrics.scss";
+@import "dashboard_support/monitors/_monitors_responsive.scss";

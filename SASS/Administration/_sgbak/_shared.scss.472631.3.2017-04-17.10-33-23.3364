@@ -1,0 +1,97 @@
+ .ui-icon,
+ .ui-widget-content .ui-icon,
+ .ui-state-default .ui-icon,
+ .ui-widget-header .ui-state-default .ui-icon,
+ .ui-iggrid-paging-item.ui-state-default .ui-icon {
+     color: #000
+ }
+ 
+ .ui-icon,
+ .ui-widget-content .ui-icon,
+ .ui-state-default .ui-icon,
+ .ui-widget-header .ui-state-default .ui-icon,
+ .ui-iggrid-paging-item.ui-state-default .ui-icon {
+     margin-left: 0px;
+     margin-right: 0px;
+ }
+ 
+ .control-group {
+     margin-top: 0px;
+     .select select {
+         padding: 11px 15px;
+     }
+ }
+ 
+ .ui-igeditor-input-container {
+     background: $light;
+ }
+ 
+ .generator {
+     background-color: $light;
+     .ui-state-default,
+     .ui-widget-content .ui-state-default,
+     .ui-widget-header .ui-state-default {
+         background: #fff;
+         color: #000;
+     }
+     .ui-igeditor-input-container {
+         background: #fff;
+     }
+     .ui-icon,
+     .ui-widget-content .ui-icon,
+     .ui-state-default .ui-icon,
+     .ui-widget-header .ui-state-default .ui-icon,
+     .ui-iggrid-paging-item.ui-state-default .ui-icon {
+         margin-left: 0px;
+         margin-right: 0px;
+     }
+     .btn-default {
+         padding: 8px 10px;
+         background-color: $accent-1;
+         color: #fff;
+     }
+ }
+ 
+ .head-assist {
+     padding: 1px;
+     .control {
+         font-size: 13px;
+     }
+     background-color: $light;
+     .btn-default {
+         color: #fff;
+     }
+     .btn-default:hover {
+         background-color: $accent-1;
+     }
+     .btn {
+         line-height: 1.15em;
+     }
+ }
+ 
+ .or {
+     text-align: center;
+     font-size: 1.5em;
+     font-weight: bold;
+     input {
+         font-size: .75em;
+         font-weight: normal;
+     }
+ }
+ 
+ .select {
+     margin-bottom: 0px;
+ }
+ 
+ .control input:checked~.control__indicator {
+     background: $admin;
+ }
+ 
+ .control {
+     margin-right: 8px;
+     width: auto;
+ }
+ 
+ .breadcrumb {
+     margin-bottom: 0px !important;
+ }

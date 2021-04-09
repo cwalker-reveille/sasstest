@@ -1,0 +1,29 @@
+/* Let the Variables Begin */
+
+
+/* Open Sans Fontface definition.  */
+
+@import "_variables.scss";
+@import "administration/_variables.scss";
+$opensans-font-path: "../../fonts";
+@font-face {
+    font-family: 'Open Sans', Verdana, sans-serif;
+    src: url("#{$opensans-font-path}/open-sans-regular.woff2?v=#{$opensans-version}") format("woff2"),
+    url("#{$opensans-font-path}/open-san-regular.woff?v=#{$opensans-version}") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Let the Variables END */
+
+@import "administration/_home.scss";
+@import "administration/_groups.scss";
+@import "administration/_monitors.scss";
+@import "administration/_scorecard.scss";
+@import "administration/_healthcheck.scss";
+@import "administration/_security.scss";
+@import "administration/_notifications.scss";
+@import "administration/_schedules.scss";
+@import "administration/_downloads.scss";
+@import "administration/_remote.scss";

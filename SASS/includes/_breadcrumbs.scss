@@ -1,0 +1,54 @@
+.breadcrumbcontainer {
+    background-color: $headerbarbackground;
+    display: flex;
+    align-items: center;
+    min-height: $headerbar-min-height-large;
+
+    @include media-breakpoint-down(sm) {
+        min-height: $headerbar-min-height-small;
+    }
+
+    > div {
+        margin-left: 1em;
+    }
+}
+
+.breadcrumb {
+    padding: .85rem 1rem;
+    margin-bottom: 0px !important;
+    list-style: none;
+    border-radius: 0rem;
+    background-color: $headerbarbackground;
+    color: $breadcrumbtext;
+
+    a {
+        color: $breadcrumbtext;
+    }
+}
+
+.breadcrumb-item {
+    color: $breadcrumbtext;
+}
+.breadcrumb-item.cp{
+    cursor:pointer;
+}
+
+.breadcrumb-item.active {
+    color: $breadcrumbtext;
+    font-weight: 700;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #000;
+    content: "/";
+}
+
+.breadcrumb_checkbox {
+    padding-top: 7px;
+    color: #000;
+    padding-left: 20px;
+    background-color: #e6e6e6;
+}

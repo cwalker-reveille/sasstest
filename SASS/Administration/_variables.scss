@@ -1,0 +1,48 @@
+@use "sass:map";
+@use "sass:color";
+@use "../variables" as v;
+
+$admin: $admin-accent;
+$section-accent: $accent-1;
+$section-accent-text: v.$admin-accent-text;
+$adminbutton: ( 'default':v.$admin-accent,
+    'hover': color.scale(v.$admin-accent,$lightness: 20%),
+    'focus': v.$admin-accent,
+    'pressed': #fff, 
+    'disabled': light-gray
+);
+   
+
+
+body {
+    color: #000000;
+}
+.adminbutton {
+    background-color: $admin-accent;
+    text-align: center;
+    border-radius: .25rem;
+    padding: 5px;
+    color: #ffffff;
+
+    > a {
+        color: #ffffff;
+    }
+
+    &:hover {
+        background-color: $section-accent;
+    }
+
+    &:disabled {
+        background-color: gray;
+    }
+
+    &.disabled {
+        background-color: gray;
+        cursor: default;
+    }
+
+    &:hover.disabled {
+        background-color: gray;
+        cursor: default;
+    }
+}

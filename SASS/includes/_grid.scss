@@ -1,0 +1,71 @@
+﻿.reveillegrid {
+    height: calc(100% - 4em);
+
+    .ui-iggrid-paging {
+        float: left;
+        padding-left: 1em;
+
+        .ui-iggrid-nextpage {
+            margin-left: 5px;
+        }
+    }
+
+    .ui-iggrid-pagedropdowncontainer {
+        display: none;
+    }
+
+    .ui-iggrid-footer {
+        .ui-iggrid-paging {
+            display: none;
+        }
+    }
+}
+.gridtoolbar{
+    display:flex;
+    justify-content:space-between;
+    .gridnavigationbuttonscontainer{
+        display:flex;
+        margin-left:2em;
+        align-items:center;
+        button{
+            margin-right:1em;
+        }
+        .pagenumberlabel {
+            margin-left:1em;
+        }
+        .pagenumbervalue{
+            margin-left:.5em;
+        }
+        .gridrefresh{
+            margin-left:1em;
+            cursor:pointer;
+        }
+        .gridmessage{
+            margin-left:1em;
+            margin-right:1em;
+        }
+        
+    }
+    .gridpagesizecontainer{
+        display:flex;
+        justify-content:flex-end;
+        div[data-content=rowsperpagelabel]{
+            margin-right:.5em;
+            align-self:center;
+        }
+        .select{
+            margin-bottom:0px;
+            width:6em;
+            >select{
+                padding-top:5px;
+                padding-bottom:5px;
+                padding-left:5px;
+                padding-right:5px;
+            }
+            .select__arrow{
+                top:12px;
+                right:4px;
+            }
+        }
+    }
+}

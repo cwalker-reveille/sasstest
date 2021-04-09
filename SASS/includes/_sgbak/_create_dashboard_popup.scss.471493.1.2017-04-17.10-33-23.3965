@@ -1,0 +1,121 @@
+.remove-card i {
+    color: red
+}
+
+#card_previewer {
+    margin-top: 20px;
+    .left-arrow {
+        display: none;
+        position: relative;
+        background: $light;
+        padding: 15px;
+        height: 210px;
+        width: 100%;
+        p {
+            color: #000;
+            font-size: 11px;
+        }
+    }
+    .left-arrow:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        margin-top: -10px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid $light;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        display: none
+    }
+}
+
+#card_previewer.response_time {
+    .left-arrow {
+        display: inline-block;
+    }
+    .left-arrow:after {
+        top: 20% !important;
+        transition: .2s linear all;
+        display: inline;
+    }
+}
+
+#card_previewer.messages {
+    .left-arrow {
+        display: inline-block;
+    }
+    .left-arrow:after {
+        top: 90% !important;
+        transition: .2s linear all;
+        display: inline;
+    }
+}
+
+#card_previewer.transaction_counts {
+    .left-arrow {
+        display: inline-block;
+    }
+    .left-arrow:after {
+        top: 70% !important;
+        transition: .2s linear all;
+        display: inline;
+    }
+}
+
+#card_previewer.availability {
+    .left-arrow {
+        display: inline-block;
+    }
+    .left-arrow:after {
+        top: 40% !important;
+        transition: .2s linear all;
+        display: inline;
+    }
+}
+
+#card_previewer.metrics {
+    .left-arrow {
+        display: inline-block;
+    }
+    .left-arrow:after {
+        top: 55% !important;
+        transition: .2s linear all;
+        display: inline;
+    }
+}
+
+.list-group-item-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+    background: $accent-1;
+    color: $accent-2;
+    width: 30%;
+    padding: 4px 8px;
+    float: left;
+}
+
+.setup-content {
+    transition: .2s linear all;
+}
+
+div .form-bottom textarea {
+    height: 100px;
+}
+
+div .form-bottom button.btn {
+    min-width: 105px;
+}
+
+div .form-bottom .input-error {
+    border-color: #19b9e7;
+}
+
+div .new-card-form fieldset {
+    display: none;
+}

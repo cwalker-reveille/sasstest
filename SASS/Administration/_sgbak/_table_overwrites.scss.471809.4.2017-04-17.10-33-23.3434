@@ -1,0 +1,64 @@
+ .ReveilleGrid_Header {
+     th {
+         a {
+             color: #000;
+         }
+         a:hover {
+             color: #fff;
+         }
+     }
+ }
+ 
+ .table-hover tbody tr:hover td {
+     background-color: $section-accent !important;
+ }
+ 
+ .table {
+     button,
+     html input[type="button"],
+     input[type="reset"],
+     input[type="submit"] {
+         padding: 5px 11px;
+         border: 0;
+         background: none !important;
+         color: $section-accent;
+     }
+     .centeredtext {
+         text-align: center;
+     }
+     color: #000;
+     [type=reset],
+     [type=submit],
+     .gridbutton,
+     html [type=button] {
+         padding: 5px 11px;
+         border: 0;
+         background-color: none !important;
+         color: $section-accent;
+     }
+ }
+ 
+ //* BEGIN DEMO INFORMATION //*
+ .RevilleColors_TestStatus_NotTested {
+     background-color: $not-tested;
+     color: #fff;
+     font-weight: 600;
+ }
+ 
+ .RevilleColors_TestStatus_Good {
+     background-color: $good;
+     font-weight: 600;
+ }
+ 
+ .RevilleColors_TestStatus_Bad {
+     background-color: $bad;
+     font-weight: 600;
+     color: #fff;
+ }
+ 
+ .RevilleColors_TestStatus_Warning {
+     background-color: $warning;
+     font-weight: 600;
+ }
+ 
+ //* END DEMO INFORMATION //*

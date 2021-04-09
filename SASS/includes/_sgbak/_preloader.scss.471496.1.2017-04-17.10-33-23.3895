@@ -1,0 +1,56 @@
+$size: 0.5em;
+.loading {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: $size;
+    vertical-align: middle;
+    text-align: center;
+    background-color: transparent;
+    border: 8px solid transparent;
+    border-top-color: $accent-1;
+    border-bottom-color: $accent-4;
+    border-radius: 50%;
+}
+
+.outer {
+    animation: spin 1s infinite;
+}
+
+.inner {
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.preloader-wrap {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.inner-wrapper {
+    // width:400px;
+    padding-top: 15%;
+    text-align: center;
+}
+
+.loading-text {
+    font-weight: 600;
+    padding-top: 20px;
+    color: $accent-2;
+}

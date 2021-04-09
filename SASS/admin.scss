@@ -1,0 +1,13 @@
+@import "_variables.scss";
+@import "administration/_variables.scss";
+
+@import "_mixins.scss";
+@import "includes/_fonts.scss"; //this is Themify Icons import
+@import "includes/_defaultfont.scss";
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss"; 
+@import "includes/_preloader.scss";
+@import "_test2.scss";
+@import "administration/_collectors.scss";

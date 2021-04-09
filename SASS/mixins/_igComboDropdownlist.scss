@@ -1,0 +1,24 @@
+﻿@mixin igComboDropdownList( $baseclassname, $activetextcolor, $activebackgroundColor) {
+    /* Note that this cannot be nested in another class because the dropdown is built with the body as its parent node*/
+    .#{$baseclassname} {
+        .ui-igcombo-list {
+            .ui-igcombo-listitemholder {
+                .ui-igcombo-listitem {
+                    font-family: $fontfamily, sans-serif;
+
+                    &.ui-state-active {
+                        background-color: $activebackgroundColor;
+                        color: $activetextcolor;
+                        border: solid 1px $activebackgroundColor;
+                    }
+
+                    &.ui-state-hover {
+                        background-color: $light-gray-text;
+                        color: #000;
+                        border: solid 1px $light-gray-text;
+                    }
+                }
+            }
+        }
+    }
+}

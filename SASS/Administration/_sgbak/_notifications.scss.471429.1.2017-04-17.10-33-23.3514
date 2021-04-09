@@ -1,0 +1,115 @@
+.admin_notify_home,
+.admin_notify_employee,
+.admin_notify_support {
+    @import "_shared.scss";
+    @import "../includes/_card_homepage.scss";
+    $section-accent: $admin5;
+    @import "_table_overwrites.scss";
+    .input-group {
+        margin: 5px 10px;
+        padding: 5px;
+    }
+    .input-group .form-control:not(:first-child),
+    .input-group-addon:not(:first-child),
+    .input-group-btn:not(:first-child)>.btn,
+    .input-group-btn:not(:first-child)>.btn-group>.btn,
+    .input-group-btn:not(:first-child)>.dropdown-toggle,
+    .input-group-btn:not(:last-child)>.btn-group:not(:first-child)>.btn,
+    .input-group-btn:not(:last-child)>.btn:not(:first-child) {
+        padding: 15px;
+    }
+    .input-group-btn:not(:last-child)>.btn,
+    .input-group-btn:not(:last-child)>.btn-group {
+        margin-right: -1px;
+        padding: 15px;
+    }
+    .custom-checkbox {
+        min-height: 1rem;
+        padding-left: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+    .custom-checkbox .custom-control-indicator {
+        content: "";
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 10px;
+        background-color: #818181;
+        border-radius: 15px;
+        margin-right: 10px;
+        -webkit-transition: background .3s ease;
+        transition: background .3s ease;
+        vertical-align: middle;
+        margin: 0 16px;
+        box-shadow: none;
+    }
+    .custom-checkbox .custom-control-indicator:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #f1f1f1;
+        border-radius: 21px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+        left: -2px;
+        top: -4px;
+        -webkit-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+        transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator {
+        background-color: $available;
+        background-image: none;
+        box-shadow: none !important;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_warning {
+        background-color: $warning;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_bad {
+        background-color: $bad;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev1 {
+        background-color: $sev1;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev4 {
+        background-color: $sev4;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev3 {
+        background-color: $sev3;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev2 {
+        background-color: $sev2;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator:after {
+        background-color: $available;
+        left: 15px;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_warning:after {
+        background-color: $warning;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_bad:after {
+        background-color: $bad;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev1:after {
+        background-color: $sev1;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev4:after {
+        background-color: $sev4;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev3:after {
+        background-color: $sev3;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator.notify_sev2:after {
+        background-color: $sev2;
+    }
+    .custom-checkbox .custom-control-input:focus~.custom-control-indicator {
+        box-shadow: none !important;
+    }
+    .select_arrow {
+        top: 37px !important;
+    }
+    .right {
+        text-align: right;
+    }
+}

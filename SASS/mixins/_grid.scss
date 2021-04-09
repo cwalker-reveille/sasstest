@@ -1,0 +1,146 @@
+﻿@mixin reveillegrid($color, $hovercolor, $activeborder) {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: calc(100vh - 1em - 40px - #{$commandbuttonrowcontainerheight} - 2px); // 2px is for some user agents adding a top and bottom border
+    table {
+        font-family: $fontfamily;
+        font-size: 12px;
+
+        th, td {
+            padding: .75rem;
+
+
+
+            @include media-breakpoint-down(sm) {
+                padding-left: .75em;
+                padding-right: .75em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+        }
+
+        &.ui-iggrid-table {
+            tbody > tr td:not(:first-child) {
+                border-left-width: 0px;
+            }
+
+            tbody > tr td:not(:last-child) {
+                border-right-width: 0px;
+            }
+
+            td.ui-state-hover {
+                background-color: $section-accent;
+                color: $section-accent-text;
+            }
+
+            .ui-ig-altrecord {
+                td.ui-state-hover {
+                    background-color: $section-accent;
+                    color: $section-accent-text;
+                }
+            }
+
+            tr.dragging {
+                td.ui-state-hover {
+                    color: #000000;
+                    background-color: #ffffff;
+                }
+
+                &.ui-ig-altrecord {
+                    td.ui-state-hover {
+                        background-color: #f0f0f0;
+                        color: #000000;
+                    }
+                }
+
+                &.droppable {
+                    td:first-child {
+                        border-left: solid 3px $droppablecolor;
+                    }
+
+                    td:last-child {
+                        border-right: solid 3px $droppablecolor;
+                    }
+
+                    td {
+                        border-top: solid 3px $droppablecolor;
+                        padding-top: calc(.75em - 2px);
+                        border-bottom: solid 3px $droppablecolor;
+                        padding-bottom: calc(.75em - 1px);
+                    }
+                }
+            }
+
+            td.ui-state-highlight {
+                background-color: transparent;
+                border-bottom-color: #dadada;
+            }
+
+            td.ui-state-highlight.ui-state-hover {
+                //    background-color: $section-accent;
+                border-bottom-color: #dadada;
+            }
+        }
+
+
+        &.ui-iggrid-headertable {
+            thead {
+                tr {
+                    background-color: rgba(0,0,0,0.05);
+
+                    th {
+                        padding: .75rem;
+                        border-top: 1px solid #dee2e6;
+                        border-bottom: 1px solid #dee2e6;
+                        border-left-style: none;
+                        border-right-style: none;
+                        color: #000;
+                        font-weight: 700;
+
+                        &.ui-iggrid-sortableheader {
+                            color: $accent-1;
+
+                            &:hover {
+                                color: $dash-accent;
+                            }
+                        }
+
+                        &.ui-widget-header {
+                            background-color: $light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .iconcolumn {
+        width: 3em;
+        text-align: center;
+    }
+
+    .ui-iggrid-table.ui-widget-content {
+        .ui-state-hover {
+            .gridbutton {
+                color: $section-accent-text;
+            }
+        }
+
+        tr.dragging {
+            .ui-state-hover {
+                .gridbutton {
+                    color: $section-accent;
+                }
+            }
+        }
+
+        .gridbutton {
+            color: $section-accent;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

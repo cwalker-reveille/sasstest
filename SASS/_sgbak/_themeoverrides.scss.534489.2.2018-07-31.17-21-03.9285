@@ -1,0 +1,87 @@
+﻿$ENCHOICE: true;
+
+@if $ENCHOICE {
+   
+    $color-1: #5c2d83; // Royal Purple
+$color-2: #4c4f55; // Charcoal grey
+$color-3: #ff8726; // Tangerine
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+// additional colors
+$success: #6fce72; // green
+$alert: #cb2236; // red
+
+
+/* DASHBOARD SECTION */
+
+$dash-accent: #f8b332; // Mustard Yellow
+$dash-hover: lighten($dash-accent, 10%);
+
+/* SYSYTEM DASHBOARD SECTION */
+
+$sys-dash-accent: #299b47; // Rich Green
+$sys-dash-hover: lighten($sys-dash-accent, 10%);
+
+/* REPORTS SECTION */
+
+$reports-accent: #00a7e1; // Sky Blue
+$reports-hover: lighten($reports-accent, 10%);
+
+/* ADMIN SECTION */
+
+$admin-accent: #ff8726;
+$admin-hover: lighten($admin-accent, 10%);
+
+/*  LOGS SECTION */
+
+$logs-accent: lighten($dash-accent, 20%);
+$logs-hover: lighten($logs-accent, 10%);
+
+/* USER SECTION */
+
+$user-accent: lighten($sys-dash-accent, 20%);
+
+/* STATUS COLORS */
+
+$all: darken(#fff, 10%);
+$disabled: lighten($color-2, 20%);
+$not-tested: darken($reports-accent, 10%);
+$testing: lighten($reports-accent, 20%);
+$good: darken($sys-dash-accent, 10%);
+$warning: lighten($admin-accent, 10%);
+$bad: darken($admin-accent, 10%);
+$sev4: $warning;
+$sev3: darken($dash-accent, 55%);
+$sev2: lighten(#d5621c, 10%);
+$sev1: $bad;
+$error: $sev2;
+$available: $testing;
+$not-monitored: $not-tested;
+
+/* GRAPH COLORS */
+
+$graph-1: lighten($sys-dash-accent, 25%);
+$graph-2: $sys-dash-accent;
+$graph-3: darken($sys-dash-accent, 25%);
+$graph-4: lighten($color-1, 25%);
+$graph-5: $color-1;
+$graph-6: darken($color-1, 25%);
+$graph-7: lighten($reports-accent, 25%);
+$graph-8: $reports-accent;
+$graph-9: darken($reports-accent, 25%);
+$graph-10: lighten($dash-accent, 20%);
+// fonts
+$primary-font: 'proxima_novalight', serif;
+$secondary-font: 'proxima_novasemibold', sans-serif;
+
+    $headerlogo-large: "../images/enChoice-logo-tagline.svg";
+    $headerlogo-small: "../images/enChoice-symbol.svg";
+
+
+    .modal.aboutpanel{
+        .modal-header{
+            background-color:green;
+        }
+    }
+
+}

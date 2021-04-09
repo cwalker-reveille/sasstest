@@ -1,0 +1,11 @@
+﻿@mixin input($textcolor: #ffffff, $bordercolor: #000000, $textalign: center ) {
+    width: 100%;
+    text-align: $textalign;
+    color: $textcolor;
+    background: transparent;
+    border-bottom: solid thin $bordercolor;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    font-family: $fontfamily;
+}

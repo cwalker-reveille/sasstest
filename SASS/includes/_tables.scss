@@ -1,0 +1,48 @@
+.table-hover tbody tr:hover td,
+{
+    background-color: $accent-1;
+    color: $accent-2;
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        padding: 5px 11px;
+        border: 0;
+        background: none !important;
+        color: #fff !important;
+    }
+}
+
+.table-hover {
+    font-size: 12px;
+    th {
+        color: $dark-text;
+    }
+}
+
+table-striped tbody tr:nth-of-type(odd) {
+    background-color: $accent-2;
+    color: #fff;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #eceeef;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    color: #000
+}
+
+.table-striped-custom{
+        font-size: 12px;
+    th{
+        background-color:rgba(0,0,0,.05);
+        color: $dark-text;
+    }
+    .altrow {
+        background-color:rgba(0,0,0,.05)
+    }
+}

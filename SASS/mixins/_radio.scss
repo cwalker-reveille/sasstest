@@ -1,0 +1,47 @@
+﻿@mixin radio($color, $unchecked) {
+    .control--radio {
+        display: flex;
+        align-items: center;
+
+        .title {
+            margin-top: 4px;
+        }
+
+        input:checked ~ .control__indicator {
+            background: $color;
+
+            &:after {
+                display: block;
+            }
+        }
+
+        input:not([disabled]):checked ~ .control__indicator,
+        input:checked:focus ~ .control__indicator {
+            background: $color;
+        }
+
+        input:disabled ~ .control__indicator {
+            background: #7b7b7b;
+        }
+
+        .control__indicator {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $unchecked;
+        }
+
+        .control__indicator:after {
+            top: 7px;
+            left: 7px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #fff;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+﻿.aboutpanel {
+    .modal-dialog {
+        .logo {
+            width: 153px;
+            height: 50px;
+            background: url($aboutpanel-logo) no-repeat;
+            background-size: 153px 50px;
+            text-indent: -9999px;
+        }
+
+        .modal-header {
+            height: auto;
+            background-color: $aboutpanel-header-backgroundcolor;
+            border-bottom: $aboutpanel-header-border-bottom;
+        }
+
+        .modal-body {
+            min-height: 7em;
+        }
+
+        .productname {
+            font-weight: bold;
+            text-align: center;
+            margin-top: .5em;
+        }
+
+        .expiredmessage {
+            text-align: center;
+            margin-top: .5em;
+            color: $alert;
+        }
+
+        .address {
+            text-align: center;
+            margin-top: .5em;
+        }
+
+        .companylinkcontainer {
+            text-align: center;
+            margin-top: .5em;
+        }
+
+        .contactlinkcontainer {
+            text-align: center;
+            margin-top: .5em;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: .5em;
+        }
+    }
+}

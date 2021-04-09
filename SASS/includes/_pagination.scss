@@ -1,0 +1,44 @@
+.panel-footer .col{
+ line-height: 34px;
+ height: 34px;
+}
+
+.panel-footer .pagination{
+  margin:0; 
+}
+
+.page-link {
+    position: relative;
+    float: left;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    color: $light-gray-text;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.page-link:hover {
+    background-color: $accent-1;
+    color:$accent-2;
+    border: 1px solid $accent-3;
+    text-decoration: none;
+}
+
+.page-count{
+    padding-top:20px;
+    font-size:11px;
+
+}
+
+.pagination-sm .page-link{
+    font-size:11px;
+}
+
+.page-item-active {
+    .page-link{
+       background-color: $dash-accent !important;
+    color:$accent-2 !important;;
+   
+    }
+}

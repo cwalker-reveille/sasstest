@@ -1,0 +1,29 @@
+﻿@mixin contained_button($color, $backgroundcolor) {
+    .btn-primary {
+        color: $color;
+        background-color: $backgroundcolor;
+        border-color: $backgroundcolor;
+
+        &:hover:enabled {
+           background-color: darken($backgroundcolor,15%);
+            border-color: darken($backgroundcolor, 15%);
+        }
+
+        &:not(:disabled):active {
+            background-color: $backgroundcolor;
+            border-color: $backgroundcolor;
+        }
+
+        &:not(:disabled):focus {
+            background-color:lighten($backgroundcolor, 10%);
+            border-color: lighten($backgroundcolor, 10%);
+            box-shadow: none;
+        }
+
+        &:disabled {
+            color: #8e8e8e;
+            background-color: #cccccc;
+            border-color: #cccccc;
+        }
+    }
+}

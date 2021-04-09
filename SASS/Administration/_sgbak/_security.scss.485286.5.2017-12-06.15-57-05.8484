@@ -1,0 +1,107 @@
+.admin_security {
+    @import "_shared.scss";
+    .headerbar{
+        min-height:40px;
+    }
+    .current_group {
+        padding-top: 5px;
+        color: #000;
+    }
+    .table {
+        border: none;
+        color: #000;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+        //  background-color: $light;
+    }
+    .table-definition thead th:first-child {
+        pointer-events: none;
+        background: white;
+        border: none;
+    }
+    .table td {
+        vertical-align: middle;
+    }
+    .permissionstable, .permissionkeystable{
+         tr {
+            th:nth-of-type(1), td:nth-of-type(1) {
+                text-align:center;
+                width:6em;
+            }
+            th:nth-of-type(2),td:nth-of-type(2){
+                text-align:center;
+                width:6em;
+            }
+        }
+    }
+
+    .page-item>* {
+        border: none;
+    }
+    .custom-checkbox {
+        min-height: 1rem;
+        padding-left: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+    .custom-checkbox .custom-control-indicator {
+        content: "";
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 10px;
+        background-color: #818181;
+        border-radius: 15px;
+        margin-right: 10px;
+        -webkit-transition: background .3s ease;
+        transition: background .3s ease;
+        vertical-align: middle;
+        margin: 0 16px;
+        box-shadow: none;
+    }
+    .custom-checkbox .custom-control-indicator:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #f1f1f1;
+        border-radius: 21px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+        left: -2px;
+        top: -4px;
+        -webkit-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+        transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator {
+        background-color: $admin;
+        background-image: none;
+        box-shadow: none !important;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-indicator:after {
+        background-color: $admin;
+        left: 15px;
+    }
+    .custom-checkbox .custom-control-input:focus~.custom-control-indicator {
+        box-shadow: none !important;
+    }
+   
+    .allowed, .fulltrust, .deter {
+        font-size:20px;
+    }
+    .allowed {
+        color: green !important;
+    }
+    .fulltrust {
+        color: $disabled !important;
+    }
+    .deter {
+        color: $dash-accent !important;
+    }
+
+    .head-assist {
+        .btn-default {
+            margin: 5px;
+        }
+    }
+}

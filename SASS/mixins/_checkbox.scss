@@ -1,0 +1,62 @@
+﻿@mixin checkbox($color, $unchecked, $control_indtop:auto) {
+    .control--checkbox {
+        padding-left: 30px;
+        cursor: pointer;
+
+        .title {
+            margin-top: 4px;
+        }
+
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        input ~ .control__indicator {
+            background: $unchecked;
+        }
+
+        input:checked ~ .control__indicator {
+            background: $color;
+
+            &:after {
+                display: block;
+            }
+        }
+
+        &:hover input:not([disabled]):checked ~ .control__indicator,
+        input:checked:focus ~ .control__indicator {
+            background: $color;
+        }
+
+        .control__indicator {
+            position: absolute;
+            top: $control_indtop;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background: white;
+        }
+
+        .control__indicator:after {
+            position: absolute;
+            display: none;
+            content: '';
+            top: 4px;
+            left: 8px;
+            width: 3px;
+            height: 8px;
+            transform: rotate(45deg);
+            border: solid #ffffff;
+            border-width: 0 2px 2px 0;
+            transition: transform .25s;
+        }
+
+        .control__indicator.indeterminate:after {
+            transform: rotate(90deg);
+            border-width: 0 2px 0px 0;
+            top: 5px;
+        }
+    }
+}

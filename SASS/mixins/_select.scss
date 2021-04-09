@@ -1,0 +1,65 @@
+﻿@mixin select($textcolor: #ffffff, $background: #000000 ) {
+    margin-bottom: 0px;
+
+    select {
+        background: transparent;
+        color: $textcolor;
+        border-bottom: solid thin $textcolor;
+        padding-left: 0px;
+        padding-bottom: 1px;
+        padding-top: 0px;
+        padding-right: 0px;
+
+        option {
+            color: #000;
+            background-color: #fff;
+            border-bottom: solid thin #000;
+            &:checked {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    .select__arrow {
+        top: 6px;
+        right: 3px;
+        border-color: $textcolor transparent transparent transparent;
+    }
+
+    input.selectinput {
+        background: transparent;
+        padding: 0px;
+        width: 100%;
+        color: $textcolor;
+    }
+
+    div.ui-igedit {
+        background: $background;
+        border-top-width: 0px;
+        border-bottom-width: 1px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-bottom-color: $textcolor;
+
+        > .ui-igedit-button-common {
+            background: $background;
+            border-width: 0px;
+
+            > .ui-icon {
+                color: $textcolor;
+
+                &::before {
+                    color: $textcolor;
+                    font-size: 125%;
+                    margin-top: 0px;
+                    top: 30%;
+                }
+            }
+        }
+
+        &.ui-state-hover {
+            border-bottom-color: $textcolor;
+        }
+    }
+}

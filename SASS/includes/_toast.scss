@@ -1,0 +1,53 @@
+﻿.reveilletoastcontainer {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px; // min-width divided by 2
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: 30px;
+
+    &.show {
+        visibility: visible;
+        animation: reveilletoastfadein 0.5s, reveilletoastfadeout 0.5s 2.5s;
+    }
+
+    @keyframes reveilletoastfadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 30px;
+            opacity: 1
+        }
+    }
+
+    @keyframes reveilletoastfadeout {
+        from {
+            bottom: 30px;
+            opacity: 1
+        }
+
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+}
+
+.reveilletoast {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left:1em;
+    margin-right:1em;
+
+    > div {
+        text-align: center;
+    }
+}

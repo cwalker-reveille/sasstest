@@ -1,0 +1,163 @@
+@use 'sass:map';
+    
+$gridtheme:(
+    headerbackground: #e6e6e6,
+    oddrowbackground: #fff,
+    evenrowbackground:#f0f0f0
+    );
+
+/* FONTS */
+$themify-font-path: "../../fonts" !default;
+$default-font-path: "../../fonts" !default;
+$fontfamily: 'nunito-sans-latin-400',Verdana;
+$fontfamilybold:'nunito-sans-latin-800', Verdana;
+$base-font-size: 14px;
+
+/* font awesome path is defined in font-awesome/_variable.scss */
+/* Universal Status Colors */
+@import "includes/_status_colors.scss";
+
+/*source for this file: https://www.iconfinder.com/icons/315672/document_file_pdf_icon */
+$pdflogo: "images/20x20pdf.png";
+$pdfbasecolorlogo: "images/20x20pdf-basecolor.png";
+
+/* Main Common Font Colors */
+
+$accent-1: #1ab3ab;
+$accent-2: #ffffff;
+$accent-3: #e6e6e6;
+$headerbarbackgroundcolor: #e6e6e6;
+$dark-text: #212121;
+$dark-gray-text: #767272;
+$dark-gray-text-hover: darken($dark-gray-text,30%);
+$light-gray-text: #a8a7a7;
+$light-gray-text-hover: darken($light-gray-text,30%);
+
+$material-checkbox-unmarked-stroke-color: #fff;
+$material-checkbox-unmarked-fill-color: transparent;
+$material-checkbox-marked-stroke-color: #fff;
+$material-checkbox-marked-fill-color: #fff;
+$material-checkbox-checkmark-color: #000;
+$material-textfield-border-color: #000;
+
+$alert: #930d11;
+
+/* Main Common Background Colors */
+
+$light: #e6e6e6;
+$content-bg: #d1d1d1;
+$card-header: #fafaf8;
+$trans-white: rgba(255, 255, 255, .03);
+$trans-black: rgba(0, 0, 0, .03);
+$breadcrumbtext: #000000;
+
+$headerbarbackground: #e6e6e6;
+$headerbar-min-height-large: 60px;
+$headerbar-min-height-small:40px;
+
+/* Logos */
+$poweredby: none;
+$headerlogo-large: "images/logo-large.svg";
+$headerlogo-small: "images/logo-small.svg";
+$headerlogo-small-margin-top: .7rem;
+$headerlogo-border-bottom: solid 1px $trans-white;
+
+$viewerlogo: "images/logo-large.svg"; // for the dashboard and scorecard viewer pages
+
+
+/* Nav Colors - Standard Colors */
+
+$nav-bg: #212121;
+$nav-bg-logo: #212121;
+$nav-font-color:#fff;
+$compactNav-sub-bg: darken(#fff, 5%);
+$compactNav-arrowcolor: #999;
+$compactNav-hover-bg: #373944;
+$compactNav-item-color:#777;
+$compactNav-item-hover:#333;
+$navToggle-border-top:#373535;
+
+/* Modal colors */
+$modal-header-background: #e6e6e6;
+$modal-header-color: #ffffff;
+$modal-footer-background: #212121;
+$modal-footer-color:#ffffff;
+$modal-background-darktheme: #212121;
+$modal-textcolor-darktheme: rgba(255, 255, 255, 1);
+$modal-header-background-darktheme: $modal-background-darktheme;
+$modal-header-textcolor-darktheme: $modal-textcolor-darktheme;
+$modal-body-background-darktheme: $modal-background-darktheme;
+$modal-body-textcolor-darktheme: $modal-textcolor-darktheme;
+$model-body-inputbox-background: lighten($modal-background-darktheme,15%);
+$model-body-textlabel-color: darken($modal-body-textcolor-darktheme,35%);
+
+/* ABOUT DIALOG */
+$aboutpanel-header-backgroundcolor : $light;
+$aboutpanel-header-border-bottom: none;
+$aboutpanel-logo: "images/logo-large.svg";
+
+
+/*** SECTION COLORS ***/
+/* DASHBOARD SECTION */
+$dash-accent:#E75B26;
+$dash-accent-text:#fff;
+$dash-hover: lighten($dash-accent, 10%);
+$dashboardfolder-accent: #fec689;
+$dashboardfolderitem-text: #000000;
+
+/* SYSTEM DASHBOARD SECTION */
+
+$sys-dash-accent:#FFD530;
+$sys-dash-accent-text: #000000;
+$sys-dash-hover:lighten($sys-dash-accent, 10%);
+$sys-dash-headerbar-background-color: #e8e8e8;
+
+
+/* REPORTS SECTION */
+
+$reports-accent:#26ADB7;
+$reports-hover:lighten($reports-accent, 10%);
+$reports-disabled: lighten($reports-accent, 10%);
+
+/* ADMIN SECTION */
+
+$admin-accent: #1B75BC;
+$admin-hover:lighten($admin-accent, 10%);
+$admin-accent-hover: $admin-hover;
+$admin-accent-text: #ffffff;
+
+/*  LOGS SECTION */
+
+$logs-accent:#80B192;
+$logs-hover:lighten($logs-accent, 10%);
+$logs-alternaterow: #e6e6e6;
+
+/* CUSTOM LINK */
+$customlink-accent:#ffffff;
+$customlink-accent-hover:#ffffff;
+$customlink-accent-text:#000000;
+
+/* USER SECTION */
+
+$user-accent:#7F3F98;
+
+/* Default Chart Colors */
+
+$color-1: #1ab3ab;
+$color-2: #8FBC8B;
+$color-3: #FF9C5B;
+
+/* Default Status colors*/
+$status_disabled : #1f699a;
+$status_nottested:#439bd5;
+$status_testing: #3b8183;
+$status_good: #c5df9f;
+$status_warning: #fad089;
+$status_bad: #b50f19;
+$statusOK: $status_good;
+$statusError: $status_bad;
+
+
+@import "_themeoverrides.scss";
+
+

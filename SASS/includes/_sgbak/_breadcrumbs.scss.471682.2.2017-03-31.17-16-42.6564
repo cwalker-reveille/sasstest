@@ -1,0 +1,23 @@
+.breadcrumb {
+    padding: .85rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: $accent-3;
+    border-radius: 0rem;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+
+.breadcrumb-item.active {
+    color: #000;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #000;
+    content: "/";
+}

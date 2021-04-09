@@ -1,0 +1,136 @@
+$section-accent: $admin3;
+.admin_scorecards {
+    @import "_shared.scss";
+    @import "_table_overwrites.scss";
+    .control-group-2 {
+        width: auto;
+    }
+    .panel-heading {
+        color: $dark-gray-text;
+    }
+    .panel {
+        border: 1px solid $light;
+        margin-top: 20px;
+        .larger {
+            font-size: 1.7em
+        }
+        .smaller {
+            font-size: .75em;
+            color: #000;
+        }
+        .dscrip {
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        .panel-body {
+            color: #000;
+            font-weight: 300;
+            a {
+                text-decoration: underline;
+                font-weight: 400;
+            }
+        }
+        .line {
+            color: rgba(0, 0, 0, 0.3);
+            font-size: 1.9em
+        }
+        .no_color .line {
+            color: rgba(0, 0, 0, 0.3);
+        }
+        .btn-default {
+            //color: rgba(0, 0, 0, 0.7) !important;
+            color: #000;
+            margin-top: 3px;
+            // background-color: rgba(0, 0, 0, 0.3) !important;
+        }
+        .btn-default:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .btn-default.mixitup-control-active {
+            background: #fff;
+            color: $dark-gray-text;
+        }
+    }
+    .no_color {
+        background-color: $card-header;
+        .panel-heading {
+            color: #000;
+        }
+        .panel {
+            .larger {
+                font-size: 1.7em
+            }
+            .smaller {
+                font-size: .75em;
+                color: #000;
+            }
+            .dscrip {
+                font-size: 1em;
+                line-height: 1.7;
+            }
+            .panel-body {
+                background-color: $card-header !important;
+            }
+            .line {
+                color: rgba(0, 0, 0, 0.7) !important;
+            }
+            .btn-default {
+                background-color: rgba(0, 0, 0, 0.3) !important;
+                color: #000;
+                margin-top: 10px;
+            }
+            .btn-default:hover {
+                background: #fff;
+                color: #000;
+            }
+            .btn-default.mixitup-control-active {
+                background: #000 !important;
+                color: #fff;
+            }
+        }
+    }
+    .panel-body {
+        background-color: #fff;
+    }
+    .status_block {
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 12px;
+        color: #000;
+        text-align: center;
+        margin: 10px;
+        // width:80%;
+        min-height: 205px;
+        border-radius: 5px;
+        h3 {
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+        }
+        span {
+            font-size: 10px;
+        }
+    }
+    .scorecard_status_bar {
+        .select {
+            width: 250px
+        }
+        .control-group-2 {
+            width: auto !important;
+        }
+    }
+    .page-item.active .page-link,
+    .page-item.active .page-link:focus,
+    .page-item.active .page-link:hover {
+        background-color: $accent-3;
+        border-color: $accent-3;
+    }
+    .panel-heading {
+        padding: 10px;
+        border: none;
+    }
+    .inside-content {
+        padding: 20px
+    }
+}

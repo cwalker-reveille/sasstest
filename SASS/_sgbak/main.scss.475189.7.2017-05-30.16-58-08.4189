@@ -1,0 +1,39 @@
+// @import "compass/css3";
+
+/* Let the Variables END */
+
+@import "_variables.scss";
+
+/* Include These  Files*/
+
+@import "template/_main_shared.scss";
+@import "template/_dashboard_body.scss";
+@import "libs/_animate.scss";
+@import "libs/_jscroll_pane.scss";
+@import "libs/_waves.scss";
+@import "template/_main_navigation.scss";
+@import "template/_top_header.scss";
+@import "template/_sub_navigation.scss";
+@import "template/_navbar.scss";
+@import "includes/_settings_popup.scss";
+@import "includes/_tooltips.scss";
+@import "includes/_preloader.scss";
+@import "includes/_breadcrumbs.scss";
+@import "includes/_tags.scss";
+@import "includes/_tables.scss";
+@import "includes/_calendars.scss";
+@import "includes/_pagination.scss";
+@import "libs/_icon-picker.scss";
+@import "template/_responsive.scss";
+@import "includes/_ie_styling.scss";
+@import "includes/_tables.scss";
+@import "template/_inner_content_nav.scss";
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+iframe {
+    border: 0 none;
+}

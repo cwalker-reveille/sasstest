@@ -1,0 +1,316 @@
+
+.modal-title {
+}
+
+
+
+.modal-dialog {
+    .control__indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: $light;
+    }
+
+    .modal-header {
+        padding: 15px;
+        background-color: $accent-3;
+        color: $accent-2;
+        text-transform: uppercase;
+    }
+
+    .modal-footer {
+        padding: 15px;
+        text-align: right;
+        background-color: #212121;
+    }
+}
+
+.settings-panel {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.settings-label {
+    font-size: 18px;
+    color: $dark-text;
+}
+
+.settings-input {
+    padding: 10px 15px;
+    border: 1px solid $light;
+    background-color: $light;
+    color: $dark-text;
+}
+
+.larger-text {
+    font-size: 20px;
+}
+
+.form-check-inline {
+    width: 50%;
+}
+
+.control-group {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.control-group-2 {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.control {
+    font-size: 1em;
+    position: relative;
+    /* display: block; */
+    margin-bottom: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    width: 45%;
+
+    .radio_inputs {
+        width: 25%;
+        opacity: 1 !important;
+        margin-left: 5px;
+        z-index: 2;
+        position: relative !important;
+    }
+}
+
+.timeline {
+    padding-left: 20px;
+
+    .control--radio {
+        display: block;
+        width: 100%;
+    }
+}
+
+.two {
+    .control {
+        width: 45% !important;
+    }
+}
+
+.three {
+    .control {
+        width: auto !important;
+        padding-right: 25px;
+    }
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: white;
+}
+
+.control--radio .control__indicator {
+    border-radius: 50%;
+}
+
+
+/* Hover and focus states */
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+    background: $light-gray-text;
+}
+
+
+/* Checked state */
+
+.control input:checked ~ .control__indicator {
+    background: $accent-1;
+}
+
+
+/* Hover state whilst checked */
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+    background: $accent-1;
+}
+
+
+/* Disabled state */
+
+.control input:disabled ~ .control__indicator {
+    pointer-events: none;
+    opacity: .6;
+    background: $light;
+}
+
+
+/* Check mark */
+
+.control__indicator:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+
+/* Show check mark */
+
+.control input:checked ~ .control__indicator:after {
+    display: block;
+}
+
+
+/* Checkbox tick */
+
+.control--checkbox .control__indicator:after {
+    top: 4px;
+    left: 8px;
+    width: 3px;
+    height: 8px;
+    transform: rotate(45deg);
+    border: solid $accent-2;
+    border-width: 0 2px 2px 0;
+}
+
+
+/* Disabled tick colour */
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+
+/* Radio button inner circle */
+
+.control--radio .control__indicator:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+/* Disabled circle colour */
+
+.control--radio input:disabled ~ .control__indicator:after {
+    background: #7b7b7b;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.select select {
+    display: inline-block;
+    width: 100%;
+    padding: 11px 15px;
+    cursor: pointer;
+    color: #7b7b7b;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    background: $light;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select::-ms-expand {
+    display: none;
+}
+
+.select select:hover,
+.select select:focus {
+    color: #000;
+    background: #ccc;
+}
+
+.select select:disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.select__arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+    border-top-color: #000;
+}
+
+.select select:disabled ~ .select__arrow {
+    border-top-color: #ccc;
+}
+
+.jscolor {
+    border: none;
+    padding: 3px 10px;
+}
+
+.dashboardsettingsmodal {
+    .carditems {
+        padding-bottom: 1.5em;
+        padding-top: 1em;
+    }
+
+    .carditems.over {
+        border: 2px dashed #000000;
+    }
+
+    .dashboardcarditemcontainer {
+        cursor: move;
+        margin-bottom: 1em;
+
+        .cardtextcontainer {
+            .fa-minus {
+                color: $alert;
+                cursor: pointer;
+            }
+
+            input {
+                width: 80%;
+                margin-left: .5em;
+            }
+        }
+    }
+}
+
+.main-one {
+    font-size: 16px;
+    font-weight: 600;
+}

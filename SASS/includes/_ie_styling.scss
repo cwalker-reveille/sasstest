@@ -1,0 +1,36 @@
+/* Microsoft Edge Browser 15+ - @supports method */
+
+@supports (-ms-ime-align:auto) and (-webkit-text-stroke:initial) {
+    .selector {
+        property: value;
+    }
+}
+
+
+/* Microsoft Edge Browser 13+ - @supports method */
+
+@supports (-ms-ime-align:auto) and (color:unset) {
+    .selector {
+        property: value;
+    }
+}
+
+
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+@supports (-ms-ime-align:auto) {
+    .selector {
+        property: value;
+    }
+}
+
+
+/* Microsoft IE Browser 11+ (All) - @supports method */
+
+_:-ms-fullscreen,
+ :root .ie11up {
+    .highlighlight2 {
+        position: absolute;
+        top: -40px;
+    }
+}

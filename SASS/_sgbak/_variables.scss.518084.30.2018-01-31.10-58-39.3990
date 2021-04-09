@@ -1,0 +1,128 @@
+$KOFAX: false !default;
+
+/* FONTS */
+$themify-font-path: "../../fonts" !default;
+@import "includes/_fonts.scss"; //this is Themify Icons import
+$proxima-font-path: "../../fonts" !default;
+@import "includes/_proxima.scss";
+$fontfamily: 'proxima_novaregular',Verdana;
+$fontfamilybold:'proxima_novasemibold', Verdana;
+$base-font-size: 14px;
+
+/* font awesome path is defined in font-awesome/_variable.scss */
+
+/* Universal Status Colors */
+@import "includes/_status_colors.scss";
+
+/* Logo */
+$poweredby:none;
+$headerlogo-large: "images/logo-large.svg";
+$headerlogo-small: "images/logo-small.svg";
+
+/* Main Common Font Colors */
+
+$accent-1: #1ab3ab;
+$accent-2: #ffffff;
+$accent-3: #e6e6e6;
+$dark-text: #212121;
+$dark-gray-text: #767272;
+$light-gray-text: #a8a7a7;
+$alert: #930d11;
+
+/* Main Common Background Colors */
+
+$light: #e6e6e6;
+$content-bg: #d1d1d1;
+$card-header: #fafaf8;
+$trans-white: rgba(255, 255, 255, .02);
+$trans-black: rgba(0, 0, 0, .02);
+$breadcrumbtext: #000000;
+
+$headerbarbackground: #e6e6e6;
+
+/* Nav Colors - Standard Colors */
+
+$nav-bg: #212121;
+$nav-font-color:#fff;
+$compactNav-sub-bg: #fff;
+$compactNav-arrowcolor: #999;
+$compactNav-hover-bg: #373944;
+$compactNav-item-color:#777;
+$compactNav-item-hover:#333;
+$navToggle-border-top:#373535;
+
+/*** SECTION COLORS ***/
+
+
+/* DASHBOARD SECTION */
+
+$dash-accent:#E75B26;
+$dash-hover: lighten($dash-accent, 10%);
+
+/* SYSYTEM DASHBOARD SECTION */
+
+$sys-dash-accent:#FFD530;
+$sys-dash-accent-text: #000000;
+$sys-dash-hover:lighten($sys-dash-accent, 10%);
+
+
+/* REPORTS SECTION */
+
+$reports-accent:#26ADB7;
+$reports-hover:lighten($reports-accent, 10%);
+
+/* ADMIN SECTION */
+
+$admin-accent: #3DA5D9;
+$admin-hover:lighten($admin-accent, 10%);
+
+/*  LOGS SECTION */
+
+$logs-accent:#80B192;
+$logs-hover:lighten($logs-accent, 10%);
+
+/* CUSTOM LINK */
+$customlink-accent:#ffffff;
+$customlink-accent-hover:#ffffff;
+$customlink-accent-text:#000000;
+
+/* USER SECTION */
+
+$user-accent:#7F3F98;
+
+/* Default Chart Colors */
+
+$color-1: #1ab3ab;
+$color-2: #8FBC8B;
+$color-3: #FF9C5B;
+
+/* Default Status colors*/
+$status_disabled : #1f699a;
+$status_nottested:#439bd5;
+$status_testing: #3b8183;
+$status_good: #c5df9f;
+$status_warning: #fad089;
+$status_bad: #b50f19;
+
+/****** KOFAX Overrides ******/
+
+@if $KOFAX {
+    $accent-1: #2d68ae;
+    $accent-2: #ffffff;
+    $accent-3: #1c4576;
+    $dash-accent: #102946;
+    $dark-text: #212121;
+    $dark-gray-text: #767272;
+    $light-gray-text: #a8a7a7;
+    $light: #e6e6e6;
+    $breadcrumbtext: #000000;
+    $headerbarbackground: #e6e6e6;
+    $content-bg: #d1d1d1;
+    $nav-bg: #2d68ae;
+    $card-header: #e8e8e8;
+    $alert: #930d11;
+    $base-font-size: 14px;
+    $poweredby: inline;
+    $headerlogo-large: "../images/kcs/kofax_logo.gif";
+    $headerlogo-small: "../images/kcs/kofax_logo_small.gif";
+}

@@ -1,0 +1,84 @@
+$admin: #3DA5D9;
+$admin2: #3DA5D9;
+$admin3: #3DA5D9;
+$admin4: #3DA5D9;
+$admin5: #3DA5D9;
+$admin6: #3DA5D9;
+$admin7: #3DA5D9;
+$admin8: #3DA5D9;
+$admin9: #3DA5D9;
+.admin_1 {
+    background-color: $admin;
+}
+
+.admin_2 {
+    background-color: $admin;
+}
+
+.admin_3 {
+    background-color: $admin;
+}
+
+.admin_4 {
+    background-color: $admin;
+}
+
+.admin_5 {
+    background-color: $admin;
+}
+
+.admin_6 {
+    background-color: $admin;
+}
+
+.admin_7 {
+    background-color: $admin;
+}
+
+.admin_8 {
+    background-color: $admin;
+}
+
+.admin_9 {
+    background-color: $admin;
+}
+
+.admin_header {
+    border-left: 20px solid $admin;
+}
+
+.admin_1_header {
+    border-left: 20px solid $admin;
+}
+
+.admin_2_header {
+    border-left: 20px solid $admin;
+}
+
+.admin_3_header {
+    border-left: 20px solid $admin;
+}
+
+.admin_4_header {
+    border-left: 20px solid $admin;
+}
+
+.admin_5_header {
+    border-left: 20px solid $admin5;
+}
+
+.admin_6_header {
+    border-left: 20px solid $admin6;
+}
+
+.admin_7_header {
+    border-left: 20px solid $admin7;
+}
+
+.admin_8_header {
+    border-left: 20px solid $admin8;
+}
+
+.admin_9_header {
+    border-left: 20px solid $admin9;
+}

@@ -1,0 +1,4 @@
+﻿$oem-accent: #2d68ae;
+$oem-accent-hover: lighten($oem-accent, 10%);
+$oem-accent-text: #ffffff;
+$oem-accent-hovertext: #ffffff;

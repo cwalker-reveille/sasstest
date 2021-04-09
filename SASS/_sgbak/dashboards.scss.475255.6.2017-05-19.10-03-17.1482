@@ -1,0 +1,18 @@
+@import "_variables.scss";
+
+/* Let the Variables END */
+
+@import "template/_newdashboard.scss";
+@import "includes/_create_dashboard_popup.scss";
+@import "cards/response_time_app/_settings.scss";
+@import "cards/messages/_settings.scss";
+@import "cards/messages/_chart.scss";
+@import "cards/response_time_app/_chart.scss";
+@import "cards/transaction_app/_chart.scss";
+@import "cards/metrics_app/_chart.scss";
+@import "cards/metrics_app/_settings.scss";
+@import "cards/monitors/_charts.scss";
+@import "cards/all_cards/_card_header.scss";
+@import "cards/all_cards/_card_body.scss";
+@import "dashboard_support/groups/_groups.scss";
+@import "dashboard_support/_healthcheck.scss";

@@ -1,0 +1,23 @@
+﻿@mixin btn_subnav($color, $hovercolor, $activeborder) {
+    border: none;
+    background: none;
+    color: $color;
+    padding: 5px 8px 5px 8px;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: 300;
+    outline: none;
+    font-size: 14px;
+
+    &:hover {
+        color: $hovercolor;
+    }
+
+    &.active_card_app {
+        border-bottom: 3px solid $activeborder;
+        text-decoration: none;
+        outline: none;
+        padding-bottom: 3px;
+        color: #fff;
+    }
+}

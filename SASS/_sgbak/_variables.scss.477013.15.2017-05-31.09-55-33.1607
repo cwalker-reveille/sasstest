@@ -1,0 +1,212 @@
+$KOFAX: false !default;
+$BootStrapVersion: "alpha6";
+
+/* FONTS */
+
+@import "includes/_fonts.scss"; //this is Themify Icons import
+$opensans-font-path: "../fonts" !default;
+$opensans-version: "0.1.2" !default;
+
+/* Universal Status Colors */
+
+@import "includes/_status_colors.scss";
+$indcards: #f6740c;
+$indVisual: #166fa8;
+
+/* Default Variables Begin */
+
+$fontfamily: "Open Sans",
+Verdana;
+$accent-1: #1ab3ab;
+$accent-2: #ffffff;
+$accent-3: #ccc;
+$accent-4: #e65022;
+$dark-text: #212121;
+$dark-gray-text: #767272;
+$light-gray-text: #a8a7a7;
+$light: #e6e6e6;
+$content-bg: #d1d1d1;
+$nav-bg: #212121;
+$card-header: #fafaf8;
+$alert: #930d11;
+$base-font-size: 14px;
+$poweredby:none;
+$headerlogo-large: "images/logo-large.svg";
+$headerlogo-small: "images/logo-small.svg";
+
+
+
+/****** Demo Overrides ******/
+@if $BootStrapVersion == "alpha5" {
+    /** Demo version **/
+    $headerlogo-large: "../img/ReveilleLogo.svg";
+    $headerlogo-small: "../img/ReveilleMark.svg";
+}
+
+
+/****** KOFAX Overrides ******/
+
+@if $KOFAX {
+    $fontfamily: "Oswald";
+    $accent-1: #2d68ae;
+    $accent-2: #ffffff;
+    $accent-3: #1c4576;
+    $accent-4: #102946;
+    $dark-text: #212121;
+    $dark-gray-text: #767272;
+    $light-gray-text: #a8a7a7;
+    $light: #e6e6e6;
+    $content-bg: #d1d1d1;
+    $nav-bg: #2d68ae;
+    $card-header: #e8e8e8;
+    $alert: #930d11;
+    $base-font-size: 14px;
+    $poweredby: inline;
+    $headerlogo-large: "images/kofax_logo.gif";
+    $headerlogo-small: "images/kofax_logo_small.gif";
+}
+
+
+/* Let the Variables END */
+
+
+/*   Calendar Popup styles */
+
+.Calendar_Calendar
+/* The calendar component */
+
+{
+    font-size: medium;
+    background-color: #eeeeef;
+    border-bottom-color: #7cc04e;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    padding-top: 2px;
+}
+
+.Calendar_Calendar td {
+    font-size: 8pt;
+}
+
+.Calendar_Day,
+.Calendar_TodayDay,
+Calendar_SelectedDay,
+.Calendar_OtherMonthDay,
+.Calendar_DisabledDay {
+    text-align: center;
+    font-size: 8pt;
+}
+
+.Calendar_Day {
+    background-color: #eeeeef;
+    color: #000000;
+}
+
+.Calendar_DisabledDay {
+    color: #d3d3d3;
+}
+
+.Calendar_TodayDay
+/* the container for today */
+
+{
+    background-color: #c0ddf5;
+    color: #000000;
+}
+
+.Calendar_SelectedDay
+/* the container for the selected day */
+
+{
+    background-color: #61a0d3;
+    color: #ffffff;
+}
+
+.Calendar_OtherMonthDay
+/* the container for the days of the other months showing in the calendar */
+
+{
+    color: #d3d3d3;
+}
+
+.Calendar_Title
+/* The title container of the calendar */
+
+{
+    background-color: #eeefec;
+    font-weight: bold;
+    font-size: large;
+    color: #9f9f9f;
+    height: 1.5em;
+    width: 80%;
+}
+
+.Calendar_Title>tbody>tr td {
+    font-size: medium;
+}
+
+.Calendar_NextPrev
+/* The Next Prev Month containers on the sides of the Tile container */
+
+{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Calendar_DayHeader
+/* the Container that holds the names of the days : Mon Tue Wed .... */
+
+{
+    background-color: #9f9f9f;
+    font-weight: bold;
+    font-size: small;
+    color: #ffffff;
+    border-borrom: solid thin black;
+}
+
+.Calendar_Footer
+/* The calendar's footer container */
+
+{
+    font-size: small;
+    color: #9f9f9f;
+    background-color: #eeefec;
+    border-top: solid thin black;
+    height: 16pt;
+    text-align: center;
+}
+
+.Calendar_Header>table>tbody>tr td {
+    width: 10%;
+    background-color: #eeefec;
+    height: 1.5em;
+}
+
+.Calendar_Header>table>tbody>tr td>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Calendar_Header>table>tbody>tr td+td {
+    width: 80% !important;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bold;
+    font-size: medium;
+    color: #9f9f9f;
+}
+
+.Calendar_Header>table>tbody>tr td+td+td {
+    width: 10% !important;
+}
+
+.Calendar_Header>table>tbody>tr td+td+td>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*  End of Calendar styles */

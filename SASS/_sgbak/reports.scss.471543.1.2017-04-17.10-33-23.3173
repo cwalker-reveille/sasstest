@@ -1,0 +1,13 @@
+/* Let the Variables Begin */
+
+@import "_variables.scss";
+
+/* Let the Variables END */
+
+@import "reports/_reports.scss";
+@import "reports/_groups.scss";
+@import "reports/_monitors.scss";
+@import "reports/_resources.scss";
+@import "reports/_scorecard.scss";
+@import "includes/_breadcrumbs.scss";
+@import "reports/_responsive.scss";
